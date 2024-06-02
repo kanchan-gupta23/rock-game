@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *
+  {
+    padding: 0;
+    margin: 0;
+  }
+    .shut{
+      height:2rem;
+      width:3rem;
+      font-size: 4rem;
+    }
+   </style>
+
+
+</head>
+<body>
+    <ion-icon name="eye-off" class="shut"></ion-icon> 
+</body>
+<script>
+     let shut = document.querySelector(".shut")
+  
+  var turn = 1
+    
+   shut.addEventListener("click",function(){
+  if(turn == 1){
+    shut.innerHTML= `<ion-icon name="eye"></ion-icon>`
+    turn=0
+  }
+  else{
+    shut.innerHTML= `<ion-icon name="eye-off"></ion-icon>`
+      turn=1
+  }
+   })
+  
+</script>
+</html>
